@@ -555,20 +555,11 @@ app.use((err, req, res, next) => {
 /* ================================================================
  * تشغيل السيرفر
  * ================================================================ */
-app.listen(PORT, () => {
-  console.log("================================");
-  console.log("YouTube API Server Running");
-  console.log(`http://localhost:${PORT}`);
-  console.log("================================");
-  console.log("Endpoints:");
-  console.log("  GET  /suggest?q=");
-  console.log("  GET  /ytsearch?q=&limit=");
-  console.log("  GET  /video/info?url=");
-  console.log("  GET  /video/formats?url=");
-  console.log("  GET  /audio?url=");
-  console.log("  GET  /youtube?url=&quality=");
-  console.log("  GET  /live/check?url=");
-  console.log("  GET  /cache/stats");
-  console.log("  POST /cache/clear");
-  console.log("================================");
+const HOST = "0.0.0.0";
+
+app.listen(PORT, HOST, () => {
+    console.log("================================");
+    console.log("YouTube API Server Running");
+    console.log(`Listening on http://${HOST}:${PORT}`);
+    console.log("================================");
 });
