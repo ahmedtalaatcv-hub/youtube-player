@@ -1,14 +1,11 @@
 {
   "name": "youtube-player",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "YouTube Search & Direct Stream Player",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^5.2.1",
     "youtubei.js": "^17.2.0"
